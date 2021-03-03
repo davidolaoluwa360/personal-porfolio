@@ -1,0 +1,31 @@
+.flex{
+    display: flex;
+}
+
+@mixin justify-content($position) {
+    justify-content: $position;
+}
+
+@mixin align-items($position) {
+    align-items: center;
+}
+
+@mixin  flex-flow($direction, $wrap:wrap) {
+    flex-flow: $direction $wrap;
+}
+
+.col-md-1{
+    flex: 0 0 20;
+}
+
+.col-md-2{
+    flex: 0 0 44%;
+}
+
+.col-md-3{
+    flex:0 0 68%;
+}
+
+.col-md-4{
+    flex: 0 0 92%;
+}

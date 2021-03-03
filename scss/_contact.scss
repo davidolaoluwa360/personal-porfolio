@@ -1,0 +1,49 @@
+
+
+.contact-container{
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 3.2rem;
+    padding: .9rem 4rem;
+
+    h2{
+        font-size: 2.5rem;
+    }
+
+    p{
+        letter-spacing: 2px;
+    }
+
+    a{
+        color: $primary-color;
+        text-decoration: underline;
+    }
+
+    form{
+        background-color: rgb(247, 247, 247);
+        padding: 1.2rem;
+        box-shadow: -10px 10px 7px rgb(41, 40, 40);
+        .form-group{
+            width: 100%;
+            margin-bottom: .9rem;
+
+            #subject{
+                height: 10vh;
+            }
+
+            [type="submit"]{
+                background-color: $primary-color;
+                padding: .7rem 1.9rem;
+                color: $secondary-color;
+                border: none;
+            }
+
+            .form-control{
+                width: 90%;
+                height: 5vh;
+                border: 2px solid $primary-color;
+                background-color: $secondary-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+
+
+.project-container{
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 3.2rem;
+    padding: .9rem 4rem;
+
+    h2{
+        font-size: 2.5rem;
+    }
+
+    p{
+        letter-spacing: 2px;
+    }
+
+
+    .project-wrapper{
+        background-color: rgb(247, 247, 247);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 4%;
+        margin-bottom: 2.8rem;
+        grid-template-areas: "project-img-wrapper project-details-wrapper";
+        box-shadow: 6px 6px 4px rgb(44, 43, 43);
+        .project-img-wrapper{
+            grid-area: project-img-wrapper;
+            background-image: url("../img/about-bg.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        .project-details-wrapper{
+            grid-area: project-details-wrapper;
+            padding: .8rem;
+
+            button{
+                margin-right: 1.9rem;
+                i{
+                    margin-right: .4rem;
+                }
+            }
+
+            .project-name{
+                font-weight: bolder;
+            }
+        }
+    }
+}
