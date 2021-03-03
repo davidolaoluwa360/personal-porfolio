@@ -36,33 +36,41 @@ header{
     flex-flow: row wrap;
     position: fixed;
     top: 0;
+    padding: 1rem .7rem!important;
+
+    .fa-bars{
+        display: none;
+    }
 
     .profile-container{
-        flex: 0 0 50%;
+        flex: 0 0 35%;
         
         .profile{
             margin-left: 1.5rem;
             color: $secondary-color;
 
-            p{
+            span{
                 border: 2px solid $secondary-color;
                 text-align: center;
                 font-weight: bolder;
-                padding: .6rem;
-                width: 14%;
+                padding: .9rem .6rem;
             }
         }
     }
 
-    .navbar-group{
+    nav{
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         min-height: 10vh;
-        flex: 0 0 50%;
+        flex: 0 0 60%;
+    }
 
+    .navbar-group{
+        display: flex;
+        align-items: center;
         .nav-item{
-            margin-right: 6.6rem;
+            margin-right: 6.1rem;
             cursor: pointer;
             
             .nav-link{
@@ -93,6 +101,7 @@ header{
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 4rem;
 
     .home-wrapper{  
         color: $secondary-color;
@@ -116,4 +125,36 @@ header{
             cursor: pointer;
         }
     }
+}
+
+@media screen and (max-width: 980px){
+    nav{
+        display: none!important;
+    }
+
+    header{
+        padding: 1.9rem .7rem!important;
+
+        .fa-bars{
+            display: flex!important;
+            color: $secondary-color;
+            font-size: 1.8rem;
+            margin-right: 1.5rem;
+        }
+    }
+
+    .profile-container{
+        flex: 0 0 100%!important;
+        display: flex!important;
+        justify-content: space-between!important;
+    }
+
+    nav{
+        flex: 0 0 100%!important;
+    }
+
+    .home-wrapper{  
+        width: 90%!important;
+    }
+
 }

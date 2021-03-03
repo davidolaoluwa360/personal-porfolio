@@ -47,3 +47,16 @@
         }
     }
 }
+
+
+@media screen and (max-width: 980px){
+    .form-control{
+        height: 10vh;
+    }
+}
+
+@media screen and  (max-width: 420px){
+    .contact-container{
+        padding: .9rem 1.3rem!important;
+    }
+}

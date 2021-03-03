@@ -49,3 +49,33 @@
         }
     }
 }
+
+@media screen and (max-width: 980px){
+    .project-wrapper{
+        grid-template-columns: repeat(2, 1fr)!important; 
+        grid-template-areas: 
+            "project-img-wrapper project-img-wrapper"
+            "project-details-wrapper project-details-wrapper"
+            !important
+        ;
+
+        grid-template-rows: 1fr 1fr!important;
+    }
+
+    .project-details-wrapper{
+        padding:  1.2rem .9rem 2.2rem .9rem!important;
+
+        button{
+            margin-right: .5rem!important;
+            i{
+                margin-right: .2rem!important;
+            }
+        }
+    }
+}
+
+@media screen and  (max-width: 420px){
+    .project-container{
+        padding: .9rem 1.3rem!important;
+    }
+}

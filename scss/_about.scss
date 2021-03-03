@@ -61,3 +61,23 @@
         }
     }
 }
+
+
+@media screen and (max-width: 980px){
+    .about-row{
+        grid-template-columns: repeat(2, 1fr)!important;
+        grid-template-rows: auto!important;
+        grid-gap: 0 2%!important;
+        grid-template-areas:
+         "about-img-container about-img-container" 
+         "about-details-container about-details-container"
+        !important
+        ;
+    }
+}
+
+@media screen and  (max-width: 420px){
+    .about-container{
+        padding: .9rem 1.3rem!important;
+    }
+}

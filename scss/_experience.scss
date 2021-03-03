@@ -60,6 +60,7 @@
             ul{
                 li{
                     list-style-type:circle;
+                    margin-bottom: .4rem;
                 }
             }
 
@@ -70,6 +71,38 @@
                 padding: .4rem 1.4rem;
                 border-radius: 30px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 980px){
+    .experience-wrapper{
+        grid-template-columns: repeat(2, 1fr)!important;
+        grid-template-rows: auto!important;
+        grid-gap: 0 2%!important;
+        grid-template-areas: 
+            "experience-menu-container experience-menu-container" 
+            "experience-details-container experience-details-container"
+            !important
+        ;   
+    }
+
+
+    .experience-menu-container{
+        ul{
+            display: flex!important;
+        }
+    }
+}
+
+@media screen and  (max-width: 420px){
+    .experience-container{
+        padding: .9rem 1.3rem!important;
+    }
+
+    .experience-menu-container{
+        ul{
+            flex-direction: column!important;
         }
     }
 }
