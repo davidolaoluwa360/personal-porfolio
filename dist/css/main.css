@@ -459,7 +459,7 @@ header {
 }
 
 header .fa-bars {
-  display: none;
+  display: none !important;
 }
 
 header .profile-container {
